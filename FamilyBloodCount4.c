@@ -136,7 +136,7 @@ int* zero_distance(int* blood_distance, int now_distance){
 int* one_distance(int* blood_distance, int now_distance){
   /  blood_name = ques_name();
 
-/全員の記されている距離が今調べている距離と等しいか調べる
+//全員の記されている距離が今調べている距離と等しいか調べる
   //(0を調べてるなら最初の人物だけ)
   //(now_distanceが0なら、1が記入)
   for(int i = 0; i < blood_num; i++){
@@ -152,7 +152,7 @@ int* one_distance(int* blood_distance, int now_distance){
   }
   return blood_distance;
 }
-
+//親等数を求める
 int* reserch_distance(int* blood_distance){
   int now_distance = 0;
   int * pre_blood_distance;
@@ -168,7 +168,7 @@ int* reserch_distance(int* blood_distance){
   return blood_distance;
 }
 
-//親等数を求める
+//親等数を求める(前段階含め)
 int relation_distance(){
 
   //親等数を入れるblood_distanceを作成
